@@ -1,0 +1,19 @@
+@use "../1-settings/"as*;
+@use "../2-tools/mixins"as*;
+
+.first {
+  grid-area: 2 / 2 / 3 / 3;
+  border-radius: 3% 3% 0 0;
+  @include card-content($color-background-1);
+}
+
+.second {
+  grid-area: 3 / 2 / 4 / 3;
+  @include card-content($color-background-2);
+}
+
+.third {
+  grid-area: 4 / 2 / 5 / 3;
+  border-radius: 0 0 3% 3%;
+  @include card-content($color-background-3);
+}

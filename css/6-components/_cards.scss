@@ -1,0 +1,33 @@
+@use "../1-settings/"as*;
+@use "../2-tools/mixins"as*;
+
+.card {
+  color: $color-paragraphs;
+  padding: 15% 10%;
+
+  &__title {
+    @include text-format($ff-header, $fw-header, 1.5rem);
+  }
+
+  &__text {
+    @include text-format($ff-paragraph, $fw-paragraph, 1rem);
+    line-height: 2rem;
+  }
+
+  &__link {
+
+    & button {
+      border-radius: 100px;
+      margin-top: 10%;
+      padding: 5% 0;
+      inline-size: 60%;
+      background-color: $color-background;
+      font-size: 1rem;
+      border: .2rem solid $color-background;
+
+      &:hover {
+        color: $color-paragraphs;
+      }
+    }
+  }
+}

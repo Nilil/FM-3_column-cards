@@ -1,0 +1,5 @@
+.background {
+  display: grid;
+  grid-template: 0 repeat(3, 1fr)/1fr;
+  padding: 10% 5%;
+}

@@ -1,0 +1,17 @@
+@mixin text-format($ff-f, $fw-f, $fs-f) {
+  font-family: $ff-f;
+  font-weight: $fw-f;
+  font-size: $fs-f;
+}
+
+@mixin card-content($bg-c) {
+  background-color: $bg-c;
+
+  & button {
+    color: $bg-c;
+  }
+
+  button:hover {
+    background-color: $bg-c;
+  }
+}

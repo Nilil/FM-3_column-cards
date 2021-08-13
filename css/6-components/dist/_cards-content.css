@@ -1,0 +1,34 @@
+.first {
+  grid-area: 2/2/3/3;
+  border-radius: 3% 3% 0 0;
+  background-color: #e38826;
+}
+.first button {
+  color: #e38826;
+}
+.first button:hover {
+  background-color: #e38826;
+}
+
+.second {
+  grid-area: 3/2/4/3;
+  background-color: #006970;
+}
+.second button {
+  color: #006970;
+}
+.second button:hover {
+  background-color: #006970;
+}
+
+.third {
+  grid-area: 4/2/5/3;
+  border-radius: 0 0 3% 3%;
+  background-color: #004241;
+}
+.third button {
+  color: #004241;
+}
+.third button:hover {
+  background-color: #004241;
+}

@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/css/3-generic/dist/_normalize.css")
+    link(rel="stylesheet", href="/css/dist/main.css")
+    link(rel="stylesheet", href="/css/5-object/dist/_desktop.css", media="screen and (min-width: 1440px)")
+    link(rel="shortcut icon", type="image/png", sizes="32x32", href="https://i.imgur.com/ywCJYvo.png")
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap", rel="stylesheet")
+    title Frontend Mentor | 3-column preview card component
+  body 
+
+    -var images = ["https://svgshare.com/i/_9_.svg", "https://svgshare.com/i/_96.svg", "https://svgshare.com/i/_9Z.svg"]
+    -var titles = ["Sedans", "Suvs", "Luxury"]
+    -var sedan = ["Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip."]
+    -var suv = ["Take a SUV for its apacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures."]
+    -var luxury = ["Cruise in the best car brands whitout the bloated prices. Enjoy the enchanced comfort of a luxury rental and arrive in style."]
+
+    mixin cards(image, title, text, text2)
+      .card__image: img(src=image, alt="Car icon")
+      .card__title: h2=title 
+      .card__text: p=text
+      .card__link: button Learn More
+
+    main.background
+      section.card.first
+        +cards( images[0] , titles[0] , sedan[0] )
+      section.card.second
+        +cards( images[1] , titles[1] , suv[0] )
+      section.card.third
+        +cards( images[2] , titles[2] , luxury[0] )
+
+    .attribution 
+      p Challenge by 
+        a(href="https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-", target="_blank") Frontend Mentor
+      p Coded by 
+        a(href="https://github.com/Nilil") Nilthon EC
