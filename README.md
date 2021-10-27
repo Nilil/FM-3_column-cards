@@ -8,8 +8,13 @@ This is a solution to the challenge proposed by Fronted Mentor: [3-column previe
 - Can see a effect if you hover the button
 
 ### Links
-- Solution (Code): [Repository](https://github.com/Nilil/FM-3_column-cards "Code")
-- Live site: 
+- Solution: [Repository](https://github.com/Nilil/FM-3_column-cards "Code")
+- Live site: [Column cards](https://fm-3-column-cards.vercel.app/ "Column cards")
+
+
+### Preview
+
+[![Column card](https://i.imgur.com/Q1HoCC8.png "Column card")](https://i.imgur.com/Q1HoCC8.png "Column card")
 
 ### Built whit
 - PUG
